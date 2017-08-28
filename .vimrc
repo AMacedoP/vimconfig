@@ -7,7 +7,7 @@ colorscheme elflord
 set nocompatible
 
 " Encoding UTF-8
-set encoding=utf-8
+"set encoding=utf-8
 
 " Attempt to determine the type of a file based on its filename
 filetype indent plugin on
@@ -37,13 +37,14 @@ set tabstop=3
 " Set *.pl extension to Prolog instead of Perl
 let g:filetype_pl="prolog"
 
-" Options for airline
-let g:airline_powerline_fonts = 1
-
-"PLUGINS SECTION
+" PLUGINS SECTION
 call plug#begin('~/.vim/plugged')
 
 " Airline Powerline
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
+
+" Options for airline
+let g:airline_powerline_fonts = 1
