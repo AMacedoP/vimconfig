@@ -1,8 +1,10 @@
 " .vimrc from Alejandro Macedo
 "
 "
-" Color scheme elflord
-colorscheme elflord
+" Color scheme default and background dark
+colorscheme default
+set background=dark
+
 " Disabling features from the distro
 set nocompatible
 
@@ -43,6 +45,10 @@ call plug#begin('~/.vim/plugged')
 " Airline Powerline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+" Colors
+Plug 'tomasr/molokai'
+Plug 'fmoralesc/molokayo'
 
 call plug#end()
 
