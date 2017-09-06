@@ -8,9 +8,6 @@ set background=dark
 " Disabling features from the distro
 set nocompatible
 
-" Encoding UTF-8
-"set encoding=utf-8
-
 " Attempt to determine the type of a file based on its filename
 filetype indent plugin on
 
@@ -33,8 +30,10 @@ set number " Show lines' number
 set relativenumber " Relative numbers
 
 " Set tab spacing
+set expandtab
 set shiftwidth=3
 set tabstop=3
+set softtabstop=3
 
 " Set *.pl extension to Prolog instead of Perl
 let g:filetype_pl="prolog"
@@ -45,10 +44,6 @@ call plug#begin('~/.vim/plugged')
 " Airline Powerline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
-" Colors
-Plug 'tomasr/molokai'
-Plug 'fmoralesc/molokayo'
 
 call plug#end()
 
