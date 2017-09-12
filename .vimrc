@@ -44,6 +44,7 @@ call plug#begin('~/.vim/plugged')
 " Airline Powerline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ying17zi/vim-live-latex-preview'
 
 call plug#end()
 
