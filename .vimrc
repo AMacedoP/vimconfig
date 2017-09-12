@@ -1,10 +1,6 @@
 " .vimrc from Alejandro Macedo
 "
 "
-" Color scheme default and background dark
-colorscheme default
-set background=dark
-
 " Disabling features from the distro
 set nocompatible
 
@@ -44,9 +40,18 @@ call plug#begin('~/.vim/plugged')
 " Airline Powerline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ying17zi/vim-live-latex-preview'
+Plug 'xuhdev/vim-latex-live-preview'
+Plug 'dylanaraps/wal.vim'
 
 call plug#end()
 
 " Options for airline
 let g:airline_powerline_fonts = 1
+let g:airline_theme = 'wal'
+
+" Options for vim-latex-live-preview
+let g:livepreview_previewer = 'zathura'
+
+" Color scheme default and background dark
+colorscheme wal
+set background=light
