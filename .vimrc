@@ -56,7 +56,7 @@ cmap w!! w !sudo tee >/dev/null %
 augroup General
    au!
    " Set spell in markdown and text files
-   autocmd FileType markdown,text setlocal spell
+   " autocmd FileType markdown,text setlocal spell
 
    " Disable comments on new lines
    autocmd FileType * setlocal formatoptions-=cro
