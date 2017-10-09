@@ -38,6 +38,10 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :wq<CR>
 nnoremap <Leader>x :q<CR>
 
+" Binding for pasting to system clipboard
+nnoremap <Leader>p "+
+vnoremap <Leader>p "+
+
 " Intuitive behaviour for wrapped lines
 nnoremap j gj
 nnoremap k gk
