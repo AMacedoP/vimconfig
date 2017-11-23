@@ -117,4 +117,7 @@ set softtabstop=3
 " EXTENSION CONFIGURATION {{{
 " Set *.pl extension to Prolog instead of Perl
 let g:filetype_pl="prolog"
+
+" Change python recommended style
+let g:python_recommended_style=0
 " }}}
