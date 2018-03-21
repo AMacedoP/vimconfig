@@ -108,16 +108,13 @@ set foldlevelstart=0
 
 " Use tab as spaces and with a width of 3
 set expandtab
-set shiftwidth=3
+set shiftwidth=4
 set breakindent            " Softwrapped lines keep indentation
-set tabstop=3
-set softtabstop=3
+set tabstop=4
+set softtabstop=4
 " }}}
 
 " EXTENSION CONFIGURATION {{{
 " Set *.pl extension to Prolog instead of Perl
 let g:filetype_pl="prolog"
-
-" Change python recommended style
-let g:python_recommended_style=0
 " }}}
