@@ -22,7 +22,7 @@ call plug#end()
 
 " PLUGINS OPTIONS {{{
 " Options for airline
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 let g:airline_theme = 'wal'
 
 " Options for vim-latex-live-preview
@@ -58,12 +58,13 @@ cmap w!! w !sudo tee >/dev/null %
 
 " AUTO COMMANDS {{{
 augroup General
-   au!
-   " Set spell in markdown and text files
-   " autocmd FileType markdown,text setlocal spell
+    au!
+    " Set spell in markdown and text files
+    " autocmd FileType markdown,text setlocal spell
 
-   " Disable comments on new lines
-   autocmd FileType * setlocal formatoptions-=cro
+    " Disable comments on new lines
+    autocmd FileType * setlocal formatoptions-=cro
+    autocmd Filetype latex,plaintex setlocal formatoptions+=cro
 augroup END
 " }}}
 
