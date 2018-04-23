@@ -38,6 +38,10 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :wq<CR>
 nnoremap <Leader>x :q<CR>
 
+" Bindings to source and edit vimrc
+nnoremap <Leader>ev :e $MYVIMRC<CR>
+nnoremap <Leader>sv :so $MYVIMRC<CR>
+
 " Binding for pasting to system clipboard
 nnoremap <Leader>p "+
 vnoremap <Leader>p "+
@@ -45,6 +49,9 @@ vnoremap <Leader>p "+
 " Intuitive behaviour for wrapped lines
 nnoremap j gj
 nnoremap k gk
+
+" Use space to fold/unfold in normal mode
+nnoremap <Space> za
 
 " Easy window navigation
 map <C-h> <C-w>h
@@ -99,20 +106,23 @@ set confirm
 set visualbell             " No beep
 set noerrorbells           " No beep
 set t_vb=
-
+set showmatch              " Show matching parenthesis
 set autoindent             " Auto indent new lines
+set copyindent
 
 " Folding with markers
 set foldmethod=marker
 set foldlevel=99
 set foldlevelstart=0
 
-" Use tab as spaces and with a width of 3
+" Indentation options
 set expandtab
 set shiftwidth=4
 set breakindent            " Softwrapped lines keep indentation
 set tabstop=4
 set softtabstop=4
+set shiftround
+
 " }}}
 
 " EXTENSION CONFIGURATION {{{
