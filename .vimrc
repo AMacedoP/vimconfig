@@ -9,13 +9,6 @@ call plug#begin('~/.vim/plugged')
 
 " Airline Powerline
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
-" Latex Preview
-Plug 'xuhdev/vim-latex-live-preview'
-
-" Wal colorscheme
-Plug 'dylanaraps/wal.vim'
 
 call plug#end()
 " }}}
@@ -23,13 +16,9 @@ call plug#end()
 " PLUGINS OPTIONS {{{
 " Options for airline
 let g:airline_powerline_fonts = 0
-let g:airline_theme = 'wal'
-
-" Options for vim-latex-live-preview
-let g:livepreview_previewer = 'zathura'
 
 " Color scheme default and background dark
-colorscheme wal
+colorscheme slate
 " }}}
 
 " REMAPS AND NEW COMMANDS {{{
